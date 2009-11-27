@@ -1,0 +1,2 @@
+module ManageRegionsHelper
+end

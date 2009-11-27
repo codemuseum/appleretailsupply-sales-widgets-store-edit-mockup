@@ -1,0 +1,25 @@
+<script type="text/javascript">
+  var removeStore = "<div class='facebox-text'>Are you sure you'd like to remove this store? It will no longer be visible to stores in the SalesForce widget dropdown.</div>"+
+    "<div class='centered top_pad'><a href='' class='red-button'>Remove Store</a></div>";
+</script>
+
+<div style="text-align:right">
+<%= link_to 'Remove Store', "javascript:jQuery.facebox(removeStore)", :class => 'red-button' %>
+</div>
+
+<h2>Edit Store</h2>
+
+<div id="app_data" class="app-section">
+  <h3>Store Info</h3>
+  
+  <div class="field-rows">
+    <div class="field-row"><div class="field-label"><label for="">R#</label></div> <div class="field-value">&nbsp;<%= text_field_tag '', '' %></div></div>
+    <div class="field-row"><div class="field-label"><label for="">Name</label></div> <div class="field-value">&nbsp;<%= text_field_tag '', '' %></div></div>
+    <div class="field-row"><div class="field-label"><label for="">Region</label></div> <div class="field-value">&nbsp;<select><option>Greater NYC</option><option>Eastern US</option></select></div></div>
+  </div>
+</div>
+
+
+<div class="centered top_pad">
+  <%= submit_tag 'Save Store' %>
+</div>
